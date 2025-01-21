@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <style>
+        .btn {
+            border: 2px solid rgb(238, 58, 58);
+            border-radius: 5px;
+            background-color: rgb(243, 211, 218);
+            height: 30px;
+            width: 80px;
+            font-weight: bold;
+
+        }
+        .btn:hover{
+            color: rgb(252, 68, 68);
+            transform: scale(1.2) ;
+            transition : 1s;
+            background-color: rgb(247, 247, 247);
+
+        }
+
+        .para {
+            font-size: 2rem;
+            color: rgb(212, 131, 131);
+            width: 50%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+       .perf{
+       color : rgb(252, 68, 68);
+       font-weight: bold;
+    }
+
+    </style>
 </head>
+
 <body>
-    <h1>cal</h1>
-    
+    <div class="main">
+<p class="perf">Perform the calculation here</p>
+        <div class="para">
+            <p class="plus"></p>
+            <p class="subt"></p>
+            <p class="mult"></p>
+            <p class="divid"></p>
+        </div>
+
+        <h1></h1>
+        <button class="btn" onclick="add()">Add +</button>
+        <button class="btn" onclick="sub()">Subtract -</button>
+        <button class="btn" onclick="mul()"> Multiply x</button>
+        <button class="btn" onclick="div()"> Divide</button>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
+
 </html>
